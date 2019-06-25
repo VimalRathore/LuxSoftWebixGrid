@@ -7,39 +7,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.webix.com/edge/webix.css">
+    <link rel="stylesheet" type="text/css" href="Styles/style.css">
     <script type="text/javascript" src="https://cdn.webix.com/edge/webix.js"></script>
-    <script type="text/javascript" src="webix.js"></script>
+    <script type="text/javascript" src="Webix/webix.js"></script>
 
-    <script type="text/javascript" src="dataApp.js"></script>
+    <script type="text/javascript" src="Controller/dataApp.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
     <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-        .rating {
-            text-align: center;
-        }
-        .webix_hcell{
-            width: 119px !important;
-        }
-        .webix_column{
-            background-color: whitesmoke
-        }
-        .webix_ss_header, .webix_ss_header TD, .webix_ss_vscroll_header, .webix_dd_drag_column {
-            background-color: darkgrey !important;
-        }
-        .modal-content{
-            width:276px;
-        }
-        .webix_message div {
-    padding: 0px 0px;
-}
-.webix_view, .webix_dtable{
-    border-width: 1px; position: relative; width: 700px !important; height: 419px;
-
-}
-        
-    </style>
+    </link>
 </head>
 
 <body ng-controller="webixTestController" class="modal-demo" style="background-color: cadetblue">
@@ -128,7 +105,6 @@
             <div view="column" id="country" sort="string">Country</div>
         </div>
     </div>
-      
     </div>
 
     <br/>

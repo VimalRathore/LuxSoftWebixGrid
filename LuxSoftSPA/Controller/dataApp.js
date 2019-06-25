@@ -34,9 +34,7 @@ app.controller("webixTestController", function ($scope, $http, $uibModal) {
 		);
 	};
 
-
 	$scope.pageLoad();
-
 
 	$scope.getRow = function (item) {
 		$scope.rowId = item;
@@ -65,21 +63,17 @@ app.controller("webixTestController", function ($scope, $http, $uibModal) {
 			resolve: {
 			}
 		});
-
 		
 		modalInstance.result.then(function () {
 			$scope.pageLoad();
 		}, function () {
 		});
 	};
-
-
 });
 
 app.controller("webixModalController", function ($scope, $http, $uibModalInstance) {
 
 	$scope.submitForm = function () {
-		//	console.log(JSON.stringify($scope.newEmployee));
 		$http.post('http://localhost:5100/api/Employee/SaveEmployees', JSON.stringify($scope.newEmployee)).
 			then(
 				function successCallback(response) {

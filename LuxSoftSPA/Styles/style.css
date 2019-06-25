@@ -1,0 +1,22 @@
+.rating {
+    text-align: center;
+}
+.webix_hcell{
+    width: 119px !important;
+}
+.webix_column{
+    background-color: whitesmoke
+}
+.webix_ss_header, .webix_ss_header TD, .webix_ss_vscroll_header, .webix_dd_drag_column {
+    background-color: darkgrey !important;
+}
+.modal-content{
+    width:276px;
+}
+.webix_message div {
+padding: 0px 0px;
+}
+.webix_view, .webix_dtable{
+border-width: 1px; position: relative; width: 700px !important; height: 419px;
+
+}
